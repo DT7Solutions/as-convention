@@ -14,10 +14,13 @@ var Eastern = function() {
             if ($(window).scrollTop() > 1) {
                 $('.header.header-sticky').addClass('sticky');
                 $('.header.navbar-fixed-top').addClass('sticky');
+                $('#booking').addClass('scrolin-btn');
 
             } else {
                 $('.header.header-sticky').removeClass('sticky');
                 $('.header.navbar-fixed-top').removeClass('sticky');
+                $('#booking').removeClass('booking-button');
+               
             }
         });
     }

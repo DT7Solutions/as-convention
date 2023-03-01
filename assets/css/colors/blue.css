@@ -5,7 +5,8 @@ a:hover, a:focus {
   color: #2e71f0; }
 
 .theme-color {
-  color: #2e71f0; }
+  /* color: #2e71f0; */
+ }
 
 .theme-color-bg {
   background-color: #2e71f0; }
@@ -22,7 +23,7 @@ a:hover, a:focus {
 .header .navbar-collapse ul.navbar-nav > li:hover > a, .header .navbar-collapse ul.navbar-nav > li:focus > a, .header .navbar-collapse ul.navbar-nav > li.active > a {
   color: #2e71f0; }
 .header.header-sticky.sticky .navbar-collapse ul.navbar-nav > li:hover > a, .header.header-sticky.sticky .navbar-collapse ul.navbar-nav > li:focus > a, .header.header-sticky.sticky .navbar-collapse ul.navbar-nav > li.active > a {
-  color: #2e71f0; }
+  color: #FFF500; }
 .header.header-full-screen .fs-nav .fs-nav-item:hover a .fs-nav .fs-nav-item:hover a {
   background-color: #2e71f0; }
 .header .cart-menu .check-out {
