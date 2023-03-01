@@ -123,61 +123,77 @@
 		<section class="section-1"
 			style="padding: 40px 0px; background-image: url('assets/as-images/booking/as-convention-booking-book-event-image-2560x1707.jpg')">
 			<!-- <img src="assets/as-images/booking/as-convention-booking-book-event-image-2560x1707.jpg" alt=""> -->
+		
 			<div class="container">
-				<div class="row">
-					<!-- <div class="text-center mrg-btm-50">
-						<h3 class="text-center" style="color: #0170B9;">Book your Event at</h3>
-						<h1 class="text-center">A S Convention</h1>
-					</div> -->
-
-					<!-- <div class="col-md-4 col-md-offset-1">
-                        <div class="row mrg-top-30">
-							<div class="col-md-9">
-								<p class="font-size-17 text-dark"><b>Contact Number:-</b></p>
-								<ul>
-									<li class="text-gray mrg-btm-5">+91-954 282 2255 </li>
-									<li class="text-gray mrg-btm-5">+91-812 5545069 </li>
-								</ul>
-							</div>
-						</div>
-						<div class="row mrg-top-30">
-							<div class="col-md-9">
-								<p class="font-size-17 text-dark"><b>Email Address:-</b></p>
-								<p>maddikarteek@gmail.com</p>
-							</div>
-						</div>
-                        <div class="row mrg-top-20">
-							<div class="col-md-9">
-								<p class="font-size-17 text-dark"><b>Adress:-</b></p>
-								<p>Mangalagiri Rd, opp. Mahindra car Showroom, Maddirala Colony, Guntur, Andhra Pradesh, 522001</p>
-							</div>
-						</div>
-						
-						<ul class="social-btn mrg-top-30">
-							<li><a class="btn icon-btn-md btn-dark-inverse hover-facebook border-radius-round" href="javascript:void(0);"><i class="ei ei-facebook"></i></a></li>
-							<li><a class="btn icon-btn-md btn-dark-inverse hover-twitter border-radius-round" href="javascript:void(0);"><i class="ei ei-twitter"></i></a></li>
-							<li><a class="btn icon-btn-md btn-dark-inverse hover-google-plus border-radius-round" href="javascript:void(0);"><i class="ei ei-google-plus"></i></a></li>
-						</ul>
-					</div> -->
-					<div class="col-md-12">
-						<form class="contact-form-wrapper" name="contactForm" id='contact_form' method="post"
-							action='assets/php/email.php'>
+				<div class="row booking-row">
+					<div class="col-sm-12 col-md-7 col-lg-7">
+						<form class="contact-form-wrapper" name="contactForm" id='contact_form' method="post" action='' 
+							style="background-color: white;  border-radius: 10px; padding: 50px 30px 40px 30px;">
 							<div class="row">
 								<div class="form-group col-md-6">
+									<label for="exampleFormControlInput1" style="color: black;">Name</label>
 									<input type="text" class="form-control" name="name" placeholder="Name">
 								</div>
-								<div class="form-group col-md-6">
-									<input type="email" class="form-control input-email fill-this" name="email"
-										placeholder="Email">
+								<div class="form-group col-sm-12 col-md-6">
+									<label for="exampleFormControlInput1" style="color: black;">Phone Number</label>
+									<input type="phone" class="form-control" name="phone" placeholder="Phone">
 								</div>
-								<div class="form-group col-md-6">
-									<input type="text" class="form-control" name="subject" placeholder="Subject">
+								<div class="form-group col-sm-12 col-md-6">
+									<label for="exampleFormControlInput1" style="color: black;">Email</label>
+									<input type="email" class="form-control input-email fill-this" name="email" placeholder="Email">
+								</div>
+								<div class="form-group col-sm-12 col-md-6">
+									<label for="exampleFormControlInput1" style="color: black;">Event</label>
+									<select name="" id="" class="form-control">
+										<option>select event</option>
+										<option value="">Wedding</option>
+										<option value="">Engagement</option>
+										<option value="">Birthday Party</option>
+										<option value="">Other</option>
+									</select>
+								</div>
+						
+								<div class="form-group col-sm-12 col-md-6">
+									<label for="exampleFormControlInput1" style="color: black;">Date</label>
+									<input type="date" class="form-control" name="date" placeholder="Date">
+								</div>
+								<div class="form-group col-sm-12 col-md-6">
+									<div>
+										<label for="exampleFormControlInput1" style="color: black;">Event Duration</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onchange="mybooking()">
+										<label class="form-check-label" for="exampleRadios1">
+											Half Day
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onchange="mybooking()">
+										<label class="form-check-label" for="exampleRadios2">
+											Full Day
+										</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3" onchange="mybooking()">
+										<label class="form-check-label" for="exampleRadios3">
+											More then One Day
+										</label>
+									</div>
+								</div>
+
+								<div class="form-group col-sm-12 col-md-12" id="select-ev-session" >
+									<label for="exampleFormControlInput1" style="color: black;">Select Session</label>
+									<select name="" id="" class="form-control" >
+										<option>Select Event Session</option>
+										<option value="">Morning Session</option>
+										<option value="">Evening Session</option>
+									</select>
 								</div>
 								<div class="form-group col-md-12">
-									<textarea class="form-control" name="message" rows="2"
-										placeholder="Meassage"></textarea>
+									<label for="exampleFormControlInput1" style="color: black;">Message</label>
+									<input type="text" class="form-control" name="message" placeholder="message">
 								</div>
-								<div class="form-group col-md-12">
+								<div class="form-group col-sm-12 col-md-12">
 									<div id="mail_success" class="success" style="display:none;">
 										Thank You ! Your email has been delivered.
 									</div>
@@ -186,24 +202,17 @@
 									</div>
 								</div>
 								<div class="form-group col-md-12" id="submit">
-									<input class="btn btn-md btn-dark" type="submit" id="send_message"
-										value="Send Message">
+									<input class="btn btn-md btn-dark" type="submit" id="send_message"  value="Send Message">
 								</div>
 							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- Contact End -->
-
-
-		<!-- Map Start -->
-		<!-- <section class="map map-md">
-				<iframe loading="lazy" src="https://maps.google.com/maps?q=Mangalagiri%20Rd%2C%20opp.%20Mahindra%20car%20Showroom%2C%20Maddirala%20Colony%2C%20%20Guntur%2C%20Andhra%20Pradesh%20522001&amp;t=m&amp;z=8&amp;output=embed&amp;iwloc=near" width="100%" height="400px"  title="Mangalagiri Rd, opp. Mahindra car Showroom, Maddirala Colony,  Guntur, Andhra Pradesh 522001" aria-label="Mangalagiri Rd, opp. Mahindra car Showroom, Maddirala Colony,  Guntur, Andhra Pradesh 522001"></iframe>
 		
-		</section> -->
-		<!-- Map End -->
+		
+		</section>
+		
 
 	</div>
 	<!-- wrapper -->

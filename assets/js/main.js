@@ -217,6 +217,12 @@ var Eastern = function() {
             slidesPerView: 3,
             paginationClickable: true,
             spaceBetween: 30,
+            loop: true,
+            speed: 7000,
+            autoplay: {
+                enabled: true,
+                delay: 1,
+            },
             breakpoints: {
                 1024: {
                     slidesPerView: 3,
@@ -486,3 +492,16 @@ var Eastern = function() {
 $(document).ready(function() {
     Eastern.init();
 });
+
+function mybooking(event){
+   
+  let event_duration = $("input[type='radio'][name='exampleRadios']:checked").val();
+  if (event_duration == 'option1'){
+    document.getElementById('select-ev-session').style.display="block"
+  }
+  else{
+    document.getElementById('select-ev-session').style.display="none"
+  }
+
+}
+

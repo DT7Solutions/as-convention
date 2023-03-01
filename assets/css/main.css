@@ -3741,6 +3741,7 @@ section {
         padding: 0px;
         overflow-x: hidden;
         max-height: 400px;
+        opacity: 0.9;
     }
     .header .navbar-collapse ul li.open ul.dropdown-menu {
         background-color: #2a2a33;
@@ -8183,11 +8184,12 @@ input.form-control {
     min-height: 40px;
     border-radius: 0;
     padding: 15px;
-    border: 1px solid #ececec;
+    border: 1px solid gray;
     font-size: 15px;
     color: #337ab7;
     letter-spacing: 0.5px;
     box-shadow: none;
+    border-radius: 2px;
 }
 
 input.form-control::-webkit-input-placeholder {
@@ -8231,12 +8233,13 @@ select.form-control {
     min-height: 40px;
     border-radius: 0;
     padding: 15px;
-    border: 1px solid #ececec;
+    border: 1px solid gray;
     font-size: 15px;
-    color: #cecece;
+    /* color: #cecece; */
     letter-spacing: 0.5px;
     padding: 0px 12px;
     box-shadow: none;
+    border-radius: 2px;
 }
 
 textarea.form-control {
@@ -11942,4 +11945,19 @@ h5.heading-1.second-line:after {
 
 .home-page-link {
     color: white;
+}
+
+
+
+@media screen and (min-width: 560px) and (max-width: 1600px) {
+.booking-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
+#select-ev-session{
+    display: none;
 }
