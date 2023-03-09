@@ -3808,6 +3808,21 @@ section {
     background-color: transparent;
 }
 
+.header.header-transparent .navbar-collapse ul.navbar-nav > li > a:hover{
+    color: #ed1e79 !important;
+}
+
+.header.header-sticky.sticky .navbar-collapse ul.navbar-nav > li > a:hover{
+   color: #ed1e79 !important;
+}
+.header.header-transparent .navbar-collapse ul.navbar-nav > li.active > a{
+    color: #01cafe !important;
+}
+.header.header-transparent .navbar-collapse ul.navbar-nav > li.active > a{
+    color: #01cafe !important;
+}
+
+
 @media only screen and (min-width: 992px) {
     .header.header-transparent .navbar-collapse ul.navbar-nav > li > a {
         color: #fff;
@@ -3815,7 +3830,7 @@ section {
     .header.header-transparent .navbar-collapse ul.navbar-nav > li:hover > a,
     .header.header-transparent .navbar-collapse ul.navbar-nav > li:focus > a,
     .header.header-transparent .navbar-collapse ul.navbar-nav > li.active > a {
-        color: #FFF500;
+        color: #01cafe;
         /* text-decoration: underline; */
         padding-bottom: 5px;
         border-bottom-style: solid;
@@ -11921,6 +11936,11 @@ h5.heading-1.second-line:after {
     .booking-button {
         position: relative; left: 12%;
     }
+    .footer-img-size{
+        /* display: flex; 
+        justify-content:center;  */
+        padding-top: 55px !important;
+    }
 
 
 }
@@ -11960,4 +11980,10 @@ h5.heading-1.second-line:after {
 
 #select-ev-session{
     display: none;
+}
+
+.footer-img-size {
+    display: flex; 
+    justify-content:center; 
+    padding-top: 80px;
 }

@@ -25,6 +25,9 @@ var Eastern = function() {
         });
     }
 
+
+
+
     // Header Search
     var headerSearch = function() {
         $('#menu-search').on('click', function() {
@@ -504,4 +507,16 @@ function mybooking(event){
   }
 
 }
+
+
+
+// let mymenu = document.querySelector('.my_navbar');
+// let item = mymenu.querySelector('.nav-item');
+//     for (let i=0; i < item.length; i++){
+//         item[0].addEventListener('click',function(){
+//           let current = document.querySelector('.active')
+//           current[0].className  = current[0].className.replace('active',"");
+//           this.className+= "active"
+//         })
+//     }
 
