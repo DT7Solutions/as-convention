@@ -11999,3 +11999,10 @@ h5.heading-1.second-line:after {
         left: 14%;
     }
 } */
+
+@media only screen and (max-width: 992px) {
+    .widget-link .widget-tittle-alt {
+        margin-top: 50px;
+        /* float: left; */
+    }
+}
