@@ -6484,7 +6484,7 @@ section {
 }
 
 .footer-default .footer-bottom .copyright a {
-    color: #fff;
+    color: #83C422;
     font-weight: bold;
 }
 
@@ -12005,4 +12005,12 @@ h5.heading-1.second-line:after {
         margin-top: 50px;
         /* float: left; */
     }
+}
+
+.booking-msg textarea.form-control {
+    min-height: 100px;
+}
+
+.bg-shadow {
+    box-shadow: 10px 10px 5px lightblue;
 }
