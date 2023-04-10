@@ -6484,7 +6484,8 @@ section {
 }
 
 .footer-default .footer-bottom .copyright a {
-    color: #83C422;
+    color: #080a52;
+    /* color: #83C422; */
     font-weight: bold;
 }
 
@@ -11851,8 +11852,9 @@ h5.heading-1.second-line:after {
 }
 
 .review-section {
-    background: rgb(216,37,127);
-    background: linear-gradient(180deg, rgba(216,37,127,1) 36%, rgba(216,37,127,1) 44%, rgba(1,112,185,1) 99%);
+    background-color: #dde6ed;
+    /* background: rgb(216,37,127);
+    background: linear-gradient(180deg, rgba(216,37,127,1) 36%, rgba(216,37,127,1) 44%, rgba(1,112,185,1) 99%); */
 }
 
 .review-color {
@@ -12013,4 +12015,8 @@ h5.heading-1.second-line:after {
 
 .bg-shadow {
     box-shadow: 10px 10px 5px lightblue;
+}
+
+.h4, h4 {
+    font-size: 17px;
 }
