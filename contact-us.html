@@ -12,6 +12,7 @@
     <!-- Favicon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/logo/as-convention-assets-images-logo-favicon-image-40x40.png">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -149,20 +150,24 @@
 						</ul> -->
 					</div>
 					<div class="col-md-7">
-						<form class="contact-form-wrapper"  name="contactForm" id='contact_form' method="post" action='assets/php/email.php'>
+						<form class="contact-form-wrapper"  name="myform" id='myform' method="post" action='assets/php/email.php'>
 							<div class="row">
 								<div class="form-group col-md-6">
-									<input type="text" class="form-control" name="name" placeholder="Name">
+									<input type="text" class="form-control" required name="name" id="name"  placeholder="Name">
+                                    <span id="demo"class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-6">
-									<input type="email" class="form-control input-email fill-this" name="email" placeholder="Email">
+									<input type="email" class="form-control input-email fill-this" name="email"id="email" placeholder="Email">
+                                    <span id="demo1"class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-12">
-									<input type="text" class="form-control" name="subject" placeholder="Subject">
+									<input type="text" class="form-control" name="subject" id="subject"placeholder="Subject">
+                                    <span id="demo3"class="text-danger"></span>
 								</div>
 								<div class="form-group col-md-12">
-									<textarea class="form-control" name="message" rows="3" style="border-color: gray;" placeholder="Meassage"></textarea>
-								</div>
+									<textarea class="form-control" name="message"id="message"rows="3" style="border-color: gray;" placeholder="Meassage"></textarea>
+                                    <span id="demo2"class="text-danger"></span>
+                                </div>
 								<div class="form-group col-md-12">
 									<div id="mail_success" class="success" style="display:none;">
 										Thank You ! Your email has been delivered.
@@ -175,7 +180,7 @@
                                     <div class="g-recaptcha" data-sitekey="6Le7-eUiAAAAAAO9_iS3xqLbfZgfYF4mqNEhDWQX"></div>
                                 </div>
 								<div class="form-group col-md-12" id="submit">
-									<input class="btn btn-md btn-dark" type="submit" id="send_message" value="Send Message">
+									<input class="btn btn-md btn-dark" type="submit" id="send_message" value="Send Message"onclick="sendingmail()">
 								</div>
 							</div>
 						</form>
