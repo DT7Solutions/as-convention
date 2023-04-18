@@ -520,3 +520,82 @@ function mybooking(event){
 //         })
 //     }
 
+// js validation
+
+// let contactform = document.querySelector('#contactForm1');
+// let inputs = document.querySelectorAll('input')
+// let textariea = document.querySelector('textarea')
+
+
+
+// contactform.addEventListener('submit', function (event) {
+//   event.preventDefault();
+//   debugger;
+function sendingmail() {
+    debugger
+  let fname = document.myform.name.value;
+//   alert("hello")
+  let subject = document.myform.subject.value;
+
+  let x = document.myform.email.value;
+  let atposition = x.indexOf("@");
+  let dotposition = x.lastIndexOf(".");
+//   let subject = document.contactForm.subject.value;
+  let message = document.myform.message.value
+  if (fname == "" || fname == null) {
+    document.getElementById("demo").innerHTML = "Please enter your name";
+    return false;
+  }
+  else {
+    document.getElementById("demo").innerHTML = "";
+  }
+
+  if (x == "" || x == null) {
+    document.getElementById("demo1").innerHTML = "Please enter your email address";
+    return false;
+  }
+
+  if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+    document.getElementById("demo1").innerHTML = "Please enter a valid email address";
+    return false;
+  }
+  else {
+    document.getElementById("demo1").innerHTML = "";
+  }
+
+  if (subject == "" || subject == null) {
+    document.getElementById("demo3").innerHTML = "Please enter your subject";
+    return false;
+  }
+  else {
+    document.getElementById("demo3").innerHTML = "";
+  }
+
+  if (message == "" || message == null) {
+    document.getElementById("demo2").innerHTML = "Please enter a message";
+    return false;
+  }
+  else {
+    document.getElementById("demo2").innerHTML = "";
+  }
+
+debugger
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "asconvention.website@gmail.com",
+    Password: "CF6C7FC75E0F2D4BB58572E7750E8FDC879B",
+    To: 'maddikarteek@gmail.com',
+    From: "asconvention.website@gmail.com",
+    Subject: subject,
+    Body: "Name:" + fname + "<br/> For email:" + x + "<br/> Subject:" + subject + "<br/> Message:"
+      + message
+  }).then(
+  alert("Sending email successfully....")
+  );
+
+
+
+}
+
+
+
